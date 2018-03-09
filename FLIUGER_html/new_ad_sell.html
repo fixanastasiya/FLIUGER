@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	 <title>Мои покупки</title>
+	<!--fa cdn-->
+	 <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/style.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="js/jquery-3.3.1.js"></script> 
+	 <script src="js/jquery.maskedinput.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="body-izbranoe">
+
+
+	<section class="small">
+	    <div class="container">
+
+	        <div class="col-lg-7 col-md-6 col-sm-6 col-xs-6 img-logo-izdbranoe">
+	            <img src="img/logo.png" alt="fliuger" class="img-responsive"/>
+	        </div>
+
+
+
+	        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
+	        <div class="select-two"><!--SELECT VALUTE AND LANGUAGE-->
+	        	<div class="btn-group btn-group-flag">    
+	        		<!-- CURRENCY, BOOTSTRAP DROPDOWN -->
+	        	                <!--<a class="btn btn-primary" href="javascript:void(0);">Currency</a>-->                    
+	        	                <a class="btn btn-primary dropdown-toggle dropdown-toggle-flag" data-toggle="dropdown" href="#"><img class="tab-pane-img-flag" src="img/Russia.png"> <span class="caret"></span></a>
+	        	               
+	        	                <ul class="dropdown-menu dropdown-menu-flag select-two-block">
+	        	                    <li><a href="javascript:void(0);">
+	        	                        <img class="tab-pane-img-flag" src="img/Russia.png" /></a>
+	        	                    </li>
+	        	                    <li><a href="javascript:void(0);">
+	        	                        <img class="tab-pane-img-flag tab-pane-options-two" src="img/United-States.png" /></a>
+	        	                    </li>
+	        	             
+	        	                </ul>
+	        	</div>	
+	        	<div class="btn-group btn-group-valute">    
+	        		<!-- CURRENCY, BOOTSTRAP DROPDOWN -->
+	        	                <!--<a class="btn btn-primary" href="javascript:void(0);">Currency</a>-->                    
+	        	                <a class="btn btn-primary dropdown-toggle-valute" data-toggle="dropdown" href="#">₽<span class="caret"></span></a>
+	        	               
+	        	                <ul class="dropdown-menu dropdown-menu-valute select-two-block select-two-block-set ">
+	        	                    <li><a href="javascript:void(0);">₽</a></li>  
+	        	                    <li><a href="javascript:void(0);">$</a></li>  
+	        	                    <li><a href="javascript:void(0);">€</a></li>
+
+	        	             
+	        	                </ul>
+	        	</div>	
+		
+			</div><!--SELECT VALUTE AND LANGUAGE-->
+	            <div class="small-prof">
+	                <a href="#" class="no-link"><i class="fa fa-user-circle"></i></a>
+	            </div>
+	        </div>
+
+	    </div>
+
+	</section>
+
+
+
+	
+
+	<nav class="navbar navbar-inverse navbar-static-top navbar-mobile" role="navigation">
+
+	    <div class="container">
+
+	      <div class="navbar-header navbar-header-seting">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+	     	 <button class="fa fa-plus btn-hover-mob"></button>
+	     	         <div class="select-two"><!--SELECT VALUTE AND LANGUAGE-->
+	     	         	<div class="btn-group btn-group-flag">    
+	     	         		<!-- CURRENCY, BOOTSTRAP DROPDOWN -->
+	     	         	                <!--<a class="btn btn-primary" href="javascript:void(0);">Currency</a>-->                    
+	     	         	                <a class="btn btn-primary dropdown-toggle dropdown-toggle-flag" data-toggle="dropdown" href="#"><img class="tab-pane-img-flag" src="img/Russia.png"> <span class="caret"></span></a>
+	     	         	               
+	     	         	                <ul class="dropdown-menu dropdown-menu-flag select-two-block">
+	     	         	                    <li><a href="javascript:void(0);">
+	     	         	                        <img class="tab-pane-img-flag" src="img/Russia.png" /></a>
+	     	         	                    </li>
+	     	         	                    <li><a href="javascript:void(0);">
+	     	         	                        <img class="tab-pane-img-flag tab-pane-options-two" src="img/United-States.png" /></a>
+	     	         	                    </li>
+	     	         	             
+	     	         	                </ul>
+	     	         	</div>	
+	     	         	<div class="btn-group btn-group-valute ">    
+	     	         		<!-- CURRENCY, BOOTSTRAP DROPDOWN -->
+	     	         	                <!--<a class="btn btn-primary" href="javascript:void(0);">Currency</a>-->                    
+	     	         	                <a class="btn btn-primary dropdown-toggle-valute" data-toggle="dropdown" href="#">₽<span class="caret"></span></a>
+	     	         	               
+	     	         	                <ul class="dropdown-menu dropdown-menu-valute select-two-block select-two-block-set ">
+	     	         	                    <li><a href="javascript:void(0);">₽</a></li>  
+	     	         	                    <li><a href="javascript:void(0);">$</a></li>  
+	     	         	                    <li><a href="javascript:void(0);">€</a></li>
+
+	     	         	             
+	     	         	                </ul>
+	     	         	</div>	
+	     	 	
+	     	 		</div><!--SELECT VALUTE AND LANGUAGE-->
+	    </div>
+
+	 	</div>
+
+	</nav>
+
+
+
+ 	
+	<div class="container cont-nav">
+
+		<div class="row">
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			                <ul class="nav navbar-nav purchase-navbar">
+			                	<div class="small-prof-mobile">
+			                	    <a href="#" class="no-link"><i class="fa fa-user-circle"></i></a>
+			                	    <span class="small-prof-mobile-span">
+			                	    <div>
+			                	    <p>Имя </p> 
+			                	    <p>Фамилия</p></div>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+			                	    </span>
+			                	</div>
+			                 <a href="purchase.html" class="active-mob">
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-shopping-bag"></i> 
+			                     <span class="menu-title-mobile">Мои покупки</span><span class="menu-title-alerts">2</span>
+			                 </a>
+			                 <a href="selling.html">
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-shopping-basket"></i> 
+			                     <span class="menu-title-mobile">Мои Продажи</span><span class="menu-title-alerts">2</span>
+			                 </a>
+			                 <a href="#">
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-shopping-bag" aria-hidden="true"></i> 
+			                     <span class="menu-title-mobile">Мои сделки</span><span class="menu-title-alerts">2</span>
+			                 </a>
+			                 <a href="notice.html">
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-bell"></i> 
+			                     <span class="menu-title-mobile">Сообщения</span><span class="menu-title-alerts">2</span>
+			                 </a>
+			                 <a href="izbranoe.html" >
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-tag"></i> 
+			                     <span class="menu-title-mobile">Избраное</span><span class="menu-title-alerts">2</span>
+			                 </a>
+			                 <a href="#">
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-cog"></i> 
+			                     <span class="menu-title-mobile">Настройки</span>
+			                 </a>              
+			                 <a href="#">
+			                     <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-sign-out"></i> 
+			                     <span class="menu-title-mobile">Выход</span>
+			                 </a>
+			                </ul>
+
+			    </div>
+			                <div class="menu-push container" id="container">
+			                     <nav class="toggle-menu  menu-vertical menu-left" id="nav">
+			                        <a href="purchase.html" class="toggle-menu-top toggle-menu-alert active">
+			                            <i class="toggle-menu-icon fa fa-shopping-bag"></i> 
+			                            <span class="menu-title">Мои покупки</span>
+
+			                        </a>
+			                        <a href="selling.html" class="toggle-menu-alert">
+			                            <i class="toggle-menu-icon fa fa-shopping-basket"></i> 
+			                            <span class="menu-title">Мои Продажи</span>
+
+			                        </a>
+			                        <a href="#" class="toggle-menu-alert">
+			                            <i class="toggle-menu-icon fa fa-handshake-o" aria-hidden="true"></i> 
+			                            <span class="menu-title">Мои сделки</span>
+			                        </a>
+			                        <a href="notice.html" class="toggle-menu-alert">
+			                            <i class="toggle-menu-icon fa fa-bell"></i> 
+			                            <span class="menu-title">Сообщения</span>
+
+			                        </a>
+			                        <a href="izbranoe.html" class="toggle-menu-alert">
+			                            <i class="toggle-menu-icon fa fa-tag"></i> 
+			                            <span class="menu-title">Избраное</span>
+
+			                        </a>
+			                        <a href="#">
+			                            <i class="toggle-menu-icon fa fa-cog"></i> 
+			                            <span class="menu-title">Настройки</span>
+			                        </a>
+			                        <a href="#" >
+			                            <i class="toggle-menu-icon toggle-menu-icon-mob fa fa-sign-out"></i> 
+			                            <span class="menu-title">Выход</span>
+			                        </a>
+			                        
+
+			                     </nav>
+			                  
+			                    <div class="main">
+			                        
+			                        
+			                        
+			                    </div>
+			                </div> <!--menu-push-->
+
+			  
+
+	<div class="nameandbuttom col-sm-offset-1">
+		<form action="" class="new-form-sell">
+						<!--new_ad-->
+									<div class="new-ad-header">
+										<h2 class="new-ad-header-h2">Новое объявление</h2>
+										<div class="new-ad-header-a">
+											<a href="new_ad_buy.html" class="header-b new-ad-header-a-setting">Купить</a>
+											<a href="new_ad_sell.html" class="header-b new-ad-header-a-setting new-ad-active">Продать</a>
+										</div>
+									</div>
+						<!--new_ad-->
+					<!--данные-->
+				      <h2 class="nameandbuttom-h2">Данные транспорта</h2>
+					  <div class="purchase">
+		
+					  			<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+					  				<select class="tab-pane-select new-ad-tab-setting">
+					  				  <option class="tab-pane-options">Тип трапспорта</option>
+					  				  <option class="tab-pane-options">Легковые</option>
+					  				  <option class="tab-pane-options">Микроавтобусы</option>
+					  				  <option class="tab-pane-options">Сидельные тягачи</option>
+					  				  <option class="tab-pane-options">Мотоциклы</option> 
+					  				  <option class="tab-pane-options">Скутеры</option>
+					  				</select>
+					  			</div>	
+					  			<div class="tab-pane-setting purchase-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+					  				<select class="tab-pane-select new-ad-tab-setting">
+					  				  <option class="tab-pane-options">Марка авто</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>
+					  				  <option class="tab-pane-options">Марка</option>			  
+					  				</select>
+					  			</div>	
+					  			<div class="tab-pane-setting purchase-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+					  				<select class="tab-pane-select new-ad-tab-setting">
+					  				  <option class="tab-pane-options">Поколение</option>
+					  				  <option class="tab-pane-options">Все</option>
+					  				  <option class="tab-pane-options">Поколение</option>
+					  				  <option class="tab-pane-options">Поколение</option>
+					  				  <option class="tab-pane-options">Поколение</option>
+					  				</select>
+					  			</div>
+
+
+								<!--вызов меню моб-->
+								<div class="purchase-btn-mob">
+									<button class="btn purchase-btn-mob-header" onclick="BtnOptinon()"><i class="fa fa-sliders" aria-hidden="true"></i></button>
+								</div>
+									<div class="purchase-form-mob" id="myShowBlock">
+										<div class="tab-pane-block purchase-form-mob-block">
+											<div class="tab-pane-setting purchase-form-mob-block new-ad-tab-mob">
+												<select class="tab-pane-select new-ad-tab-setting">
+												  <option class="tab-pane-options">Тип трапспорта</option>
+												  <option class="tab-pane-options">Легковые</option>
+												  <option class="tab-pane-options">Микроавтобусы</option>
+												  <option class="tab-pane-options">Сидельные тягачи</option>
+												  <option class="tab-pane-options">Мотоциклы</option> 
+												  <option class="tab-pane-options">Скутеры</option>
+												</select>
+											</div>	
+											<div class="tab-pane-setting purchase-form-mob-block new-ad-tab-of-two new-ad-tab-mob">
+												<select class="tab-pane-select new-ad-tab-setting">
+												  <option class="tab-pane-options">Марка авто</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>
+												  <option class="tab-pane-options">Марка</option>			  
+												</select>
+											</div>	
+											<div class="tab-pane-setting purchase-form-mob-block purchase-form-mob-block-two new-ad-tab-of-two new-ad-tab-mob">
+												<select class="tab-pane-select new-ad-tab-setting">
+												  <option class="tab-pane-options">Поколение</option>
+												  <option class="tab-pane-options">Все</option>
+												  <option class="tab-pane-options">Поколение</option>
+												  <option class="tab-pane-options">Поколение</option>
+												  <option class="tab-pane-options">Поколение</option>
+												</select>
+											</div>
+											<button type="button" class="btn btn-secondary batton purchase-btn purchase-btn-end" data-dismiss="modal">Сбросить</button>
+											<button type="button" class="btn batton purchase-btn">Применить</button>
+										</div>
+									</div>
+								<!--вызов меню моб-->
+					  </div>
+					<!--данные-->  
+					<!--категорию товара-->
+				      <h2 class="nameandbuttom-h2 new-ad-categories">Выберите категорию товара или услуги</h2>
+					  <div class="purchase">
+					  			<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+					  				<select class="tab-pane-select new-ad-tab-setting">
+					  				  <option class="tab-pane-options">Категория</option> 
+					  				  <option class="tab-pane-options">Запчасти</option>
+					  				  <option class="tab-pane-options">Расходные материалы</option>
+					  				  <option class="tab-pane-options">Аксессуары</option>
+					  				  <option class="tab-pane-options">Скупка транспорта</option>
+					  				  <option class="tab-pane-options">Кузовные работы</option> 
+					  				  <option class="tab-pane-options">Диагностика</option>
+					  				  <option class="tab-pane-options">Тюнинг</option>
+					  				</select> 
+					  			</div>	
+							<!--подкатегория-->
+							<h3 class="new-ad-categories-subcategories-h3">Подкатегория</h3>
+								<div>
+									<div class="col-xs-4 new-ad-categories-subcategories-radio">
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-1radio-1" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-1radio-1">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-1radio-2" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-1radio-2">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-1radio-3" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-1radio-3">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-1radio-4" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-1radio-4">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-1radio-5" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-1radio-5">Подкатегория</label>
+										</div>							
+									</div>
+									<div class="col-xs-4 new-ad-categories-subcategories-radio">
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-2radio-1" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-2radio-1">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-2radio-2" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-2radio-2">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-2radio-3" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-2radio-3">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-2radio-4" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-2radio-4">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-2radio-5" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-2radio-5">Подкатегория</label>
+										</div>							
+									</div>
+									<div class="col-xs-4 new-ad-categories-subcategories-radio">
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-3radio-1" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-3radio-1">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-3radio-2" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-3radio-2">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-3radio-3" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-3radio-3">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-3radio-4" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-3radio-4">Подкатегория</label>
+										</div>	
+										<div class="radio">
+										  <input type="radio" name="optradio" class="new-ad-categories-subcategories-radio-input" id="col-3radio-5" >
+										  <label class="new-ad-categories-subcategories-radio-label" for="col-3radio-5">Подкатегория</label>
+										</div>							
+									</div>
+								</div>
+							<!--подкатегория-->
+					  </div>
+					<!--категорию товара-->  
+					<!--Получать заказы из-->
+						<h3 class="new-ad-categories-subcategories-h3">Получать заказы из</h3>
+						<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+							<select class="tab-pane-select new-ad-tab-of">
+							  <option class="tab-pane-options">Все страны</option> 
+							  <option class="tab-pane-options">Белоруссия</option> 
+							  <option class="tab-pane-options">Россия</option>
+							  <option class="tab-pane-options">Украина</option>
+							</select> 
+						</div>	
+						<div class="tab-pane-setting purchase-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+							<select class="tab-pane-select new-ad-tab-of new-ad-tab-of-city">
+							  <option class="tab-pane-options">Все города</option> 
+							  <option class="tab-pane-options">Город</option> 
+							  <option class="tab-pane-options">Город</option>
+							  <option class="tab-pane-options">Город</option>						  
+							  <option class="tab-pane-options">Город</option> 
+							  <option class="tab-pane-options">Город</option>
+							  <option class="tab-pane-options">Город</option>
+							</select> 
+						</div>	
+					<!--Получать заказы из-->
+					<!--Ваши данные-->
+						<h3 class="new-ad-categories-subcategories-h3 ">Ваши данные</h3>
+						<div class="tab-pane-setting purchase-tab">
+
+							<select id="country" class="tab-pane-select new-ad-tab-of new-ad-tab-mob">
+							  <option value="ru" class="tab-pane-options">Россия</option>
+							  <option value="ua" class="tab-pane-options">Украина</option>
+							  <option value="by" class="tab-pane-options">Белоруссия</option>
+							</select>
+							
+							
+						</div>	
+
+						<div class="tab-pane-setting purchase-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+							<select class="tab-pane-select new-ad-tab-of new-ad-tab-of-city ">
+							  <option class="tab-pane-options">Город</option> 
+							  <option class="tab-pane-options">Город</option> 
+							  <option class="tab-pane-options">Город</option>
+							  <option class="tab-pane-options">Город</option>						  
+							  <option class="tab-pane-options">Город</option> 
+							  <option class="tab-pane-options">Город</option>
+							  <option class="tab-pane-options">Город</option>
+							</select> 
+						</div>	
+						<div class="new-ad-tab-of-input new-ad-tab-mob">
+							<input id="phone" type="text" placeholder="+xxx(xx)xxx-xx-xx" class="tab-pane-select new-ad-tab-of new-ad-tab-of-input-tell new-ad-tab-of-city ">
+							<p>Ваш номер телефона будет виден только тому продавцу, которого Вы выберете.</p>
+						</div>
+					<!--Ваши данные-->					
+					<div class="modal-footer purchase-modal-footer new-ad-footer">
+					  <button type="button" class="btn btn-secondary batton purchase-btn purchase-btn-end new-ad-btn" data-dismiss="modal">Отменить</button>
+					  <button type="button" class="btn batton purchase-btn new-ad-btn">Опубликовать</button>
+					</div>
+				</form>
+
+
+				<form method="get" id="form" class="new-ad-form-mob">
+				<!--new_ad-->
+							<div class="new-ad-header new-ad-header-mob">
+								<h2 class="new-ad-header-h2 new-ad-header-mob-h2">Новое объявление</h2>
+								<div class="new-ad-header-a new-ad-header-mob-a">
+									<a href="new_ad_buy.html" class="header-b new-ad-header-a-setting  new-ad-header-mob-a-setting">Купить</a>
+									<a href="new_ad_sell.html" class="header-b new-ad-header-a-setting new-ad-header-mob-a-setting new-ad-active">Продать</a>
+								</div>
+							</div>
+				<!--new_ad-->
+				<div class="step">
+					<P class="step new-ad-steep-p">Шаг 1 из 3</P>
+
+					      <h2 class="nameandbuttom-h2">Данные Вашего транспорта</h2>
+						  <div class="purchase">
+
+
+						  			<div class="tab-pane-setting purchase-tab new-ad-by-tab new-ad-tab-mob">
+						  				<select class="tab-pane-select new-ad-tab-setting">
+						  				  <option class="tab-pane-options">Тип трапспорта</option>
+						  				  <option class="tab-pane-options">Легковые</option>
+						  				  <option class="tab-pane-options">Микроавтобусы</option>
+						  				  <option class="tab-pane-options">Сидельные тягачи</option>
+						  				  <option class="tab-pane-options">Мотоциклы</option> 
+						  				  <option class="tab-pane-options">Скутеры</option>
+						  				</select>
+						  			</div>	
+						  			<div class="tab-pane-setting purchase-tab new-ad-by-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+						  				<select class="tab-pane-select new-ad-tab-setting">
+						  				  <option class="tab-pane-options">Марка авто</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>
+						  				  <option class="tab-pane-options">Марка</option>			  
+						  				</select>
+						  			</div>	
+						  			<div class="tab-pane-setting purchase-tab new-ad-by-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+						  				<select class="tab-pane-select new-ad-tab-setting">
+						  				  <option class="tab-pane-options">Поколение</option>
+						  				  <option class="tab-pane-options">Все</option>
+						  				  <option class="tab-pane-options">Поколение</option>
+						  				  <option class="tab-pane-options">Поколение</option>
+						  				  <option class="tab-pane-options">Поколение</option>
+						  				</select>
+						  			</div>
+
+						  </div>
+						<!--данные-->  
+				</div>
+
+
+
+				<div class="step new-ad-steep-p-2">
+				<P class="step  new-ad-steep-p">Шаг 2 из 3</P>
+				
+					<!--категорию товара-->
+				      <h2 class="nameandbuttom-h2 new-ad-categories">Выберите категорию товара или услуги</h2>
+					  <div class="purchase">
+					  			<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+					  				<select class="tab-pane-select new-ad-tab-setting">
+					  				  <option class="tab-pane-options">Категория</option> 
+					  				  <option class="tab-pane-options">Запчасти</option>
+					  				  <option class="tab-pane-options">Расходные материалы</option>
+					  				  <option class="tab-pane-options">Аксессуары</option>
+					  				  <option class="tab-pane-options">Скупка транспорта</option>
+					  				  <option class="tab-pane-options">Кузовные работы</option> 
+					  				  <option class="tab-pane-options">Диагностика</option>
+					  				  <option class="tab-pane-options">Тюнинг</option>
+					  				</select> 
+					  			</div>	
+							<!--подкатегория-->
+							<h3 class="nameandbuttom-h2 new-ad-categories-subcategories-h3 new-ad-categories">Подкатегория</h3>
+								<div>
+									<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+										<select class="tab-pane-select new-ad-tab-setting">
+										  <option class="tab-pane-options">Подкатегория</option> 
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option> 
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option> 
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option> 
+										  <option class="tab-pane-options">Подкатегория</option>
+										  <option class="tab-pane-options">Подкатегория</option>
+										</select> 
+									</div>	
+								</div>
+							<!--подкатегория-->
+					  </div>
+					<!--категорию товара-->  
+
+	
+				
+				</div>
+				
+				<div class="step new-ad-steep-p-3">
+				
+				<P class="step  new-ad-steep-p">Шаг 3 из 3</P>
+				
+				<!--Получать заказы из-->
+					<h3 class="new-ad-categories-subcategories-h3">Получать заказы из</h3>
+					<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+						<select class="tab-pane-select new-ad-tab-of">
+						  <option class="tab-pane-options">Все страны</option> 
+						  <option class="tab-pane-options">Белоруссия</option> 
+						  <option class="tab-pane-options">Россия</option>
+						  <option class="tab-pane-options">Украина</option>
+						</select> 
+					</div>	
+					<div class="tab-pane-setting purchase-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+						<select class="tab-pane-select new-ad-tab-of new-ad-tab-of-city">
+						  <option class="tab-pane-options">Все города</option> 
+						  <option class="tab-pane-options">Город</option> 
+						  <option class="tab-pane-options">Город</option>
+						  <option class="tab-pane-options">Город</option>						  
+						  <option class="tab-pane-options">Город</option> 
+						  <option class="tab-pane-options">Город</option>
+						  <option class="tab-pane-options">Город</option>
+						</select> 
+					</div>	
+				<!--Получать заказы из-->
+				<!--Ваши данные-->
+					<h3 class="new-ad-categories-subcategories-h3 ">Ваши данные</h3>
+						<div class="tab-pane-setting purchase-tab new-ad-tab-mob">
+
+							<select id="country-mob" class="tab-pane-select new-ad-tab-of">
+							  <option value="ru" class="tab-pane-options">Россия</option>
+							  <option value="ua" class="tab-pane-options">Украина</option>
+							  <option value="by" class="tab-pane-options">Белоруссия</option>
+							</select>
+							
+							
+						</div>	
+
+					<div class="tab-pane-setting purchase-tab purchase-tab-two new-ad-tab-of-two new-ad-tab-mob">
+						<select class="tab-pane-select new-ad-tab-of new-ad-tab-of-city ">
+						  <option class="tab-pane-options">Город</option> 
+						  <option class="tab-pane-options">Город</option> 
+						  <option class="tab-pane-options">Город</option>
+						  <option class="tab-pane-options">Город</option>						  
+						  <option class="tab-pane-options">Город</option> 
+						  <option class="tab-pane-options">Город</option>
+						  <option class="tab-pane-options">Город</option>
+						</select> 
+					</div>	
+					<div class="new-ad-tab-of-input new-ad-tab-mob">
+						<input id="phone-mob" type="text" placeholder="+xxx(xx)xxx-xx-xx" class="tab-pane-select new-ad-tab-of new-ad-tab-of-input-tell new-ad-tab-of-city ">
+						<p>Ваш номер телефона будет виден только тому продавцу, которого Вы выберете.</p>
+					</div>		
+				<div class="modal-footer purchase-modal-footer new-ad-by-footer">
+					<a href="#" class="new-ad-by-footer-a header-b "><span>Предварительный просмотр объявления</span></a>
+				  <button type="button" class="btn btn-secondary batton purchase-btn purchase-btn-end  new-ad-by-footer-btn" data-dismiss="modal">Отменить</button>
+				  <button type="button" class="btn batton purchase-btn new-ad-by-footer-btn">Опубликовать</button>
+				</div>
+				
+				</div>
+				
+				<div class="talign new-ad-taling-btn">
+				
+				<A href="#" class="back btn batton purchase-btn new-ad-by-footer-btn">Назад</A>
+				
+				<A href="#" class="next btn batton purchase-btn new-ad-by-footer-btn">Вперед</A>
+				
+				</div>
+				
+				</form>
+
+			</div>
+		</div><!--row-->
+	</div><!--container-->
+	    <section class="footer footer-kost">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="footer-block footer-block-izbranoe">
+
+	    				<a class="footer-block-icon" href="#">
+	    				<img src="img/footer/vk_icon.png" alt="">
+	    				</a>
+	    				<a class="footer-block-icon" href="#">
+	    				<img src="img/footer/fb_icon.png" alt="">
+	    				</a>
+	    			</div>
+	    			<div class="footer-block-two">
+	    				<a href="index.html" class="header-b ">Главная</a>
+	    				<a href="#" class="header-b header-a-1">Цены</a>
+	    			</div>
+	    			<div class="footer-block-three">
+	    				<a href="#" class="header-footer footer-block-three-text">О сервисе</a>
+	    			
+	    				<a href="#" class="header-footer footer-block-three-text">Помощь</a>
+	    				
+	    				<a href="#" class="header-footer">Контакты</a>
+	    			</div>
+	    			<div class="footer-mob">
+
+	    				<a class="footer-block-icon" href="#">
+	    				<img src="img/footer/vk_icon.png" alt="">
+	    				</a>
+	    				<a class="footer-block-icon" href="#">
+	    				<img src="img/footer/fb_icon.png" alt="">
+	    				</a>
+	    			</div>
+
+	    			<div class="footer-niz">
+	    				<img src="img/footer/fliuger.png" alt="fliuger">
+	    				<p class="footer-niz-text footer-niz-text-1">© 2017 Fliuger</p> <p class="footer-niz-text"> Все права защищены </p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+	
+		<div class="modal fade" id="modal-purchase-help" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" 			aria-hidden="true">
+		 	<div class="close" data-dismiss="modal" aria-hidden="true"></div>
+			   <div class="modal-dialog modal-lg">
+			     <div class="modal-content">
+			       <div class="tabs-modal ">
+
+					<h2>Подсказка</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, obcaecati dicta. Totam quasi officia numquam accusamus impedit, accusantium nostrum facere quod magnam facilis, et. Suscipit ullam deleniti ea impedit voluptatem temporibus animi culpa minima atque omnis mollitia dolore incidunt quisquam corporis, eaque repudiandae, perspiciatis, in odit soluta, distinctio! Sint quo illo impedit, hic voluptatum ratione quia in quidem minus vitae nulla pariatur rerum, ipsa placeat consequatur obcaecati facere, deserunt molestias eveniet. Veniam, modi, corporis. Iste, cumque. Sapiente doloribus, dicta accusantium fuga, repellendus quis deserunt, excepturi iure quo perferendis qui ipsa ipsum quaerat enim debitis quae earum odio blanditiis totam inventore!</p>
+
+
+			     </div>
+			   </div>
+			 </div>
+		  </div>
+
+		   <div class="modal fade purchase-modal" id="modal-purchase-delite">
+		     <div class="modal-dialog" role="document">
+		       <div class="modal-content purchase-modal-content">
+		         <div class="modal-header purchase-modal-header">
+		           </button>
+		           <h4 class="modal-title purchase-modal-title">Удалить это объявление?</h4>
+		         </div>
+		         <div class="modal-body purchase-modal-body">
+		           <p>После удаления восстановить данное объявление будет невозможно.</p>
+		         </div>
+		         <div class="modal-footer purchase-modal-footer">
+		           <button type="button" class="btn btn-secondary batton purchase-btn purchase-btn-end" data-dismiss="modal">Отменить</button>
+		           <button type="button" class="btn batton purchase-btn">Удалить</button>
+		         </div>
+		       </div><!-- /.модальное окно-Содержание -->  
+		     </div><!-- /.модальное окно-диалог -->  
+		   </div><!-- /.модальное окно --> 
+
+
+	    <script>
+	    	$("#nav").click(function() {
+	    	    $("#container").toggleClass('menu-push-toright');
+	    	    $("#nav").toggleClass('menu-open');
+	    	});
+
+
+
+	    	/*mobile menu*/
+	    	var box = document.getElementById("box"), count = 0, menu = document.getElementById("menu");
+	    	/* BOOTSTRAP DROPDOWN MENU - Update selected item text and image */
+	    	$(".dropdown-menu-flag li a").click(function () {
+	    	    var selText = $(this).text();
+	    	    var imgSource = $(this).find('img').attr('src');
+	    	    var img = '<img src="' + imgSource + '"/>';        
+	    	    $(this).parents('.btn-group-flag').find('.dropdown-toggle-flag').html(img + ' ' + selText + ' <span class="caret"></span>');
+	    	});
+	    	/* BOOTSTRAP DROPDOWN MENU - Update selected item text and image */
+	    	$(".dropdown-menu-valute li a").click(function () {
+	    	    var selText = $(this).text();       
+	    	    $(this).parents('.btn-group-valute').find('.dropdown-toggle-valute').html(selText + ' <span class="caret"></span>');
+	    	});
+	    	/*input-fomr-mob*/
+	    		$(function() {
+	    		  function maskPhone() {
+	    		    var country = $('#country option:selected').val();
+	    		    switch (country) {
+	    		      case "ru":
+	    		        $("#phone").mask("+7(999) 999-99-99");
+	    		        break;
+	    		      case "ua":
+	    		        $("#phone").mask("+380(999) 999-99-99");
+	    		        break;
+	    		      case "by":
+	    		        $("#phone").mask("+375(999) 999-99-99");
+	    		        break;          
+	    		    }    
+	    		  }
+	    		  maskPhone();
+	    		  $('#country').change(function() {
+	    		    maskPhone();
+	    		  });
+	    		});/*input-fomr-mob*/
+	    		/*input-fomr-mob-tel*/
+	    			$(function() {
+	    			  function maskPhone() {
+	    			    var country = $('#country-mob option:selected').val();
+	    			    switch (country) {
+	    			      case "ru":
+	    			        $("#phone-mob").mask("+7(999) 999-99-99");
+	    			        break;
+	    			      case "ua":
+	    			        $("#phone-mob").mask("+380(999) 999-99-99");
+	    			        break;
+	    			      case "by":
+	    			        $("#phone-mob").mask("+375(99) 999-99-99");
+	    			        break;          
+	    			    }    
+	    			  }
+	    			  maskPhone();
+	    			  $('#country-mob').change(function() {
+	    			    maskPhone();
+	    			  });
+	    			});/*input-fomr-mob-tel*/
+	    		
+	    	/*menu-hower*/ 
+			var visible = true;
+			function BtnOptinon() {
+			    if(visible) {
+
+	        document.getElementById('myShowBlock' ).style.display = 'block';
+	
+	        visible = false;
+	
+	   		 } else {
+	
+	        document.getElementById('myShowBlock' ).style.display = 'none';
+	
+	        visible = true;
+	
+	    }
+	
+	}	/*menu-hower*/ 
+	/*form-mob-new-by*/
+	$(document).ready(function() { // Ждём загрузки страницы
+		var steps = $("#form").children(".step"); // находим все шаги формы
+		$(steps[0]).show(); // показываем первый шаг
+		var current_step = 0; // задаем текущий шаг
+		$("a.next").click(function(){	// Событие клика на ссылку "Следующий шаг"
+				if (current_step == steps.length-2) { // проверяем, будет ли следующий шаг последним
+					$(this).hide(); // скрываем ссылку "Следующий шаг"
+					$("#form input[type=submit]").show(); // показываем кнопку "Регистрация"
+				}
+				$("a.back").show(); // показываем ссылку "Назад"
+				current_step++; // увеличиваем счетчик текущего слайда
+				changeStep(current_step); // меняем шаг
+		});
+		
+		$("a.back").click(function(){	// Событие клика на маленькое изображение
+			if (current_step == 1) { // проверяем, будет ли предыдущий шаг первым
+				$(this).hide(); // скрываем ссылку "Назад"
+			}
+			$("#form input[type=submit]").hide(); // скрываем кнопку "Регистрация"
+			$("a.next").show(); // показываем ссылку "Следующий шаг"
+			current_step--; // уменьшаем счетчик текущего слайда
+			changeStep(current_step);// меняем шаг
+		});
+		
+		function changeStep(i) { // функция смены шага
+			$(steps).hide(); // скрываем все шаги
+			$(steps[i]).show(); // показываем текущий
+		}
+	});
+	    </script>
+
+	
+</body>
+</html>

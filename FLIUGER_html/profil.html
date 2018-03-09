@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Профиль</title>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>	
+	<section class="menu">
+		<div class="container">
+			<div class="row">
+
+				<div class="menu-img col-lg-3">
+					<img src="img/logo.png" alt="FLIUGER">
+				</div>
+
+				<div class="menu-profil col-lg-2 col-lg-offset-10">
+					<img src="img/profil.png" alt="icon">
+				</div>
+				</div>
+				</div>
+		</section>
+
+
+		<nav class="navigation-menu js-nav-menu">
+		  <div class="navigation-menu__toggle js-nav-menu-toggle">
+		    <span class="navigation-menu__bars"></span>
+		  </div>
+		  <ul class="menu-list">
+		    <li class="menu-list__item">Menu Item 1</li>
+		    <li class="menu-list__item">Menu Item 2</li>
+		    <li class="menu-list__item">Menu Item 3</li>
+		    <li class="menu-list__item">Menu Item 4</li>
+		    <li class="menu-list__item">Menu Item 5</li>
+		  </ul>
+		</nav>
+
+
+
+
+
+
+
+
+
+
+		
+		<button class="btn login-btn"></button>
+
+
+		<button class="btn btn-primary" data-toggle="modal" data-target="#modal-all">Large modal</button>
+		<a href="#" data-toggle="modal" data-target="#modal-all">11111111111111111</a>
+
+		<div class="modal fade" id="modal-all" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		 
+
+
+
+
+
+					
+
+
+
+		<!--Подключаем стили jquery-->
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--Подключаем слайдер-->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			var wow = new WOW;
+			wow.init();
+		</script>
+					<script>
+						      $(document).ready(function(){
+						        $('.login-btn').on('click', function(event){
+						                event.preventDefault();
+						                $('.login').fadeIn();
+						              });
+						              $('.login-close').on('click', function(event) {
+						                event.preventDefault();
+						                $('.login').fadeOut();
+						              });
+						              
+        
+						              (function($) {
+						                $('.js-nav-menu-toggle').on('click', function() {
+						                  $(this).parents('.navigation-menu').toggleClass('navigation-menu--open');
+						                });
+						                
+						                $('html').on('click', function(e) {
+						                  if(!$(e.target).closest('.js-nav-menu').length &&
+						                    ($('.js-nav-menu').hasClass('navigation-menu--open'))) {
+						                      $('.js-nav-menu').removeClass('navigation-menu--open');
+						                  }
+						                });
+						              })(jQuery);
+						/* при клике вне элемента он будет закрываться  но в данной выкидывает на чёрный фон
+						       jQuery(function($){
+						        $(document).mouseup(function (e){ // событие клика по веб-документу
+						        var div = $("#pup"); // тут указываем ID элемента
+						        if (!div.is(e.target) // если клик был не по нашему блоку
+						        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+						       div.hide(); // скрываем его
+						    }
+						  });
+						});*/
+						       
+
+						  });
+
+
+					</script>
+					<script>
+
+					</script>
+</body>
+</html>
+
+
+				
+				

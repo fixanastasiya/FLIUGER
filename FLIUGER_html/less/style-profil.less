@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bttloc');
+  src:  url('../fonts/icomoon.eot?bttloc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bttloc') format('truetype'),
+    url('../fonts/icomoon.woff?bttloc') format('woff'),
+    url('../fonts/icomoon.svg?bttloc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-google-plus:before {
+  content: "\e901";
+}
+.icon-ok:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\e903";
+}
+.icon-vk:before {
+  content: "\e904";
+}
+
+
+.menu {
+  background-color: #343232;
+  &-profil {
+    display: inline-block;
+    background-color: #424141;
+    height: 100%;
+    img {
+      float: right;
+    }
+  }
+}
+/* Базовый контейнер табов */
+.tabs-modal {
+
+  height: 91rem;
+  padding: 0px;
+  text-align: center;
+}
+/* Стили секций с содержанием */
+.tabs-modal>div {
+  margin-top: 80px;
+  display: none;
+  padding: 15px;
+}
+.tabs-modal>div>p {
+  margin: 0 0 5px;
+  line-height: 1.5;
+  
+  height: 20rem;
+  /* прикрутим анимацию */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Прячем чекбоксы */
+.tabs-modal>input {
+  display: none;
+  position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs-modal>label {
+  display: inline-block;
+  margin: 90px 0 -1px;
+  padding: 15px 25px;
+  
+  text-align: center;
+  color: #969696;
+  font-size: 25px;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+.tabs-modal>label:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs-modal>input:checked+label {
+  color: #fdc32d;
+  border-bottom: 2px solid #fdc32d;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab-modal-1:checked~#content-tabs-modal-1, #tab-modal-2:checked~#content-tabs-modal-2{
+  display: block;
+}
+.tabs-modal {
+  &-section {
+    margin-top: 0px !important;
+  }
+}
+.modal {
+   background-color: rgba(0, 0, 0, 0.7);
+  &-content {
+  box-shadow: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+
+
+
+
+
+
+.social-seting {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c1c0c0;
+  border-radius: 50px;
+  margin: 2px;
+  &:hover  {
+    border-color: #fdc32d;
+    color: #fdc32d;
+  }
+  &:hover span  {
+    border-color: #fdc32d;
+    color: #fdc32d;
+  }
+}
+.social-icon {
+  color: #c1c0c0;
+  position: relative;
+  top: 11px;
+
+}
+.in, .register {
+   &-header {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+   }
+
+  h4 {
+  
+  }
+
+}
+.in, .register {
+  color: #c1c0c0;
+  display: inline-block;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+  }
+  &-social {
+    margin-bottom: 40px;
+  }
+  &-botton {
+    background-color: #fdc32d;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #333333;
+   /* .bold();*/
+    width: auto;
+  }
+  &-info {
+    font-size: 14px;
+    color: #a4a4a4;
+  &-2 {
+    width: 360px;
+    margin: 0 auto;
+  }
+  }
+  &-input {
+    text-align: center;
+    display: block;
+    background-color: #2b2b2b;
+    color: #a4a4a4;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+  }
+  &-content {
+    
+    width: 50rem;
+    padding: 2rem 10rem;
+  }
+  &-p {
+
+    margin-top: 3rem;
+    a {
+      color: #606468;
+    }
+
+  }
+  &-capcha {
+    border-radius: 10px;
+  }
+
+}
